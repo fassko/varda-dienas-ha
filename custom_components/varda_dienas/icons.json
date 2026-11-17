@@ -1,0 +1,17 @@
+{
+  "entity": {
+    "sensor": {
+      "today": { "default": "mdi:calendar-today" },
+      "tomorrow": { "default": "mdi:calendar-arrow-right" },
+      "favorites_today": { "default": "mdi:star" }
+    },
+    "binary_sensor": {
+      "favorite_today": { "default": "mdi:cake-variant" },
+      "favorite_tomorrow": { "default": "mdi:cake" }
+    },
+    "calendar": {
+      "calendar": { "default": "mdi:calendar-month" },
+      "favorites_calendar": { "default": "mdi:calendar-star" }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "domain": "varda_dienas",
+  "name": "Vārda dienas (Latvia Name Days)",
+  "codeowners": ["@fassko"],
+  "config_flow": true,
+  "dependencies": ["http"],
+  "documentation": "https://github.com/fassko/varda-dienas-ha",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/fassko/varda-dienas-ha/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

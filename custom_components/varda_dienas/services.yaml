@@ -1,0 +1,36 @@
+add_favorite:
+  name: Add favorite
+  description: Add a name to the favorites list used by the card and calendars.
+  fields:
+    name:
+      name: Name
+      description: Given name to follow (for example Anna).
+      required: true
+      example: Anna
+      selector:
+        text:
+
+remove_favorite:
+  name: Remove favorite
+  description: Remove a name from the favorites list.
+  fields:
+    name:
+      name: Name
+      description: Favorite name to remove.
+      required: true
+      example: Anna
+      selector:
+        text:
+
+set_favorites:
+  name: Set favorites
+  description: Replace the entire favorites list.
+  fields:
+    names:
+      name: Names
+      description: Full list of favorite names.
+      required: true
+      example: '["Anna", "Jānis"]'
+      selector:
+        text:
+          multiple: true

@@ -1,0 +1,76 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Vārda dienas",
+        "description": "Latviešu vārda dienu kalendārs. Var ieslēgt papildu vārdus un norādīt mīļākos vārdus, kurus vēlies nepalaist garām.",
+        "data": {
+          "show_extended": "Rādīt arī papildu vārdus",
+          "favorites": "Mīļākie vārdi (atdalīti ar komatu)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Vārda dienas jau ir konfigurētas."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Vārda dienu iestatījumi",
+        "description": "Atjaunini mīļākos vārdus un to, vai kalendārā rādīt arī papildu vārdus.",
+        "data": {
+          "show_extended": "Rādīt arī papildu vārdus",
+          "favorites": "Mīļākie vārdi (atdalīti ar komatu)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "today": { "name": "Šodien" },
+      "tomorrow": { "name": "Rīt" },
+      "favorites_today": { "name": "Mīļākie šodien" }
+    },
+    "binary_sensor": {
+      "favorite_today": { "name": "Mīļākais svin šodien" },
+      "favorite_tomorrow": { "name": "Mīļākais svin rīt" }
+    },
+    "calendar": {
+      "calendar": { "name": "Vārda dienas" },
+      "favorites_calendar": { "name": "Mīļākās vārda dienas" }
+    }
+  },
+  "services": {
+    "add_favorite": {
+      "name": "Pievienot mīļāko",
+      "description": "Pievieno vārdu mīļāko sarakstam.",
+      "fields": {
+        "name": {
+          "name": "Vārds",
+          "description": "Vārds, kuru sekot."
+        }
+      }
+    },
+    "remove_favorite": {
+      "name": "Noņemt mīļāko",
+      "description": "Noņem vārdu no mīļāko saraksta.",
+      "fields": {
+        "name": {
+          "name": "Vārds",
+          "description": "Vārds, kuru noņemt."
+        }
+      }
+    },
+    "set_favorites": {
+      "name": "Iestatīt mīļākos",
+      "description": "Aizstāj visu mīļāko sarakstu.",
+      "fields": {
+        "names": {
+          "name": "Vārdi",
+          "description": "Pilns mīļāko vārdu saraksts."
+        }
+      }
+    }
+  }
+}

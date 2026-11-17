@@ -1,0 +1,76 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Vārda dienas",
+        "description": "Latvian name days from the official calendar. Optionally enable extended names and list favorite people to follow.",
+        "data": {
+          "show_extended": "Include extended names by default",
+          "favorites": "Favorite names (comma-separated)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Vārda dienas is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Vārda dienas options",
+        "description": "Update favorite names and whether the full calendar includes extended names.",
+        "data": {
+          "show_extended": "Include extended names by default",
+          "favorites": "Favorite names (comma-separated)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "today": { "name": "Today" },
+      "tomorrow": { "name": "Tomorrow" },
+      "favorites_today": { "name": "Favorites today" }
+    },
+    "binary_sensor": {
+      "favorite_today": { "name": "Favorite celebrating today" },
+      "favorite_tomorrow": { "name": "Favorite celebrating tomorrow" }
+    },
+    "calendar": {
+      "calendar": { "name": "Name days" },
+      "favorites_calendar": { "name": "Favorite name days" }
+    }
+  },
+  "services": {
+    "add_favorite": {
+      "name": "Add favorite",
+      "description": "Add a name to the favorites list.",
+      "fields": {
+        "name": {
+          "name": "Name",
+          "description": "Given name to follow."
+        }
+      }
+    },
+    "remove_favorite": {
+      "name": "Remove favorite",
+      "description": "Remove a name from the favorites list.",
+      "fields": {
+        "name": {
+          "name": "Name",
+          "description": "Favorite name to remove."
+        }
+      }
+    },
+    "set_favorites": {
+      "name": "Set favorites",
+      "description": "Replace the entire favorites list.",
+      "fields": {
+        "names": {
+          "name": "Names",
+          "description": "Full list of favorite names."
+        }
+      }
+    }
+  }
+}
